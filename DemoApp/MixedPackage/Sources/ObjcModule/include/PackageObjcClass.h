@@ -9,8 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyObjcClass : NSObject
-
+@interface PackageObjcClass : NSObject
 @end
 
 NS_ASSUME_NONNULL_END

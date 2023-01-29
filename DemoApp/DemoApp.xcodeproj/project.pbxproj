@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192E8BA12987318B008DDE5F /* MixedPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 192E8BA02987318B008DDE5F /* MixedPackage */; };
 		8AF541772922D767005222CD /* DemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF541762922D767005222CD /* DemoAppApp.swift */; };
 		8AF541792922D767005222CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF541782922D767005222CD /* ContentView.swift */; };
 		8AF5417B2922D769005222CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF5417A2922D769005222CD /* Assets.xcassets */; };
@@ -14,9 +15,9 @@
 		8AF5418C2922D790005222CD /* MixedFwk.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF5418B2922D790005222CD /* MixedFwk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8AF5418F2922D790005222CD /* MixedFwk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF541892922D790005222CD /* MixedFwk.framework */; };
 		8AF541902922D790005222CD /* MixedFwk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF541892922D790005222CD /* MixedFwk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8AF541972922D7A6005222CD /* MyObjcClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF541952922D7A6005222CD /* MyObjcClass.h */; };
-		8AF541982922D7A6005222CD /* MyObjcClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF541962922D7A6005222CD /* MyObjcClass.m */; };
-		8AF5419A2922D7B2005222CD /* MySwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF541992922D7B2005222CD /* MySwiftClass.swift */; };
+		8AF541972922D7A6005222CD /* FwkObjcClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF541952922D7A6005222CD /* FwkObjcClass.h */; };
+		8AF541982922D7A6005222CD /* FwkObjcClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF541962922D7A6005222CD /* FwkObjcClass.m */; };
+		8AF5419A2922D7B2005222CD /* FwkSwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF541992922D7B2005222CD /* FwkSwiftClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		192E8B9C29872F96008DDE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		192E8B9E298730B9008DDE5F /* MixedPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MixedPackage; sourceTree = "<group>"; };
 		8AF541732922D767005222CD /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF541762922D767005222CD /* DemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppApp.swift; sourceTree = "<group>"; };
 		8AF541782922D767005222CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,9 +54,9 @@
 		8AF5417D2922D769005222CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8AF541892922D790005222CD /* MixedFwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MixedFwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF5418B2922D790005222CD /* MixedFwk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixedFwk.h; sourceTree = "<group>"; };
-		8AF541952922D7A6005222CD /* MyObjcClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyObjcClass.h; sourceTree = "<group>"; };
-		8AF541962922D7A6005222CD /* MyObjcClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyObjcClass.m; sourceTree = "<group>"; };
-		8AF541992922D7B2005222CD /* MySwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftClass.swift; sourceTree = "<group>"; };
+		8AF541952922D7A6005222CD /* FwkObjcClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FwkObjcClass.h; sourceTree = "<group>"; };
+		8AF541962922D7A6005222CD /* FwkObjcClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FwkObjcClass.m; sourceTree = "<group>"; };
+		8AF541992922D7B2005222CD /* FwkSwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FwkSwiftClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF5418F2922D790005222CD /* MixedFwk.framework in Frameworks */,
+				192E8BA12987318B008DDE5F /* MixedPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +79,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192E8B9D298730B9008DDE5F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				192E8B9E298730B9008DDE5F /* MixedPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		192E8B9F2987318B008DDE5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AF5416A2922D767005222CD = {
 			isa = PBXGroup;
 			children = (
+				192E8B9D298730B9008DDE5F /* Packages */,
 				8AF541752922D767005222CD /* DemoApp */,
 				8AF5418A2922D790005222CD /* MixedFwk */,
 				8AF541742922D767005222CD /* Products */,
+				192E8B9F2987318B008DDE5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,7 @@
 				8AF541762922D767005222CD /* DemoAppApp.swift */,
 				8AF541782922D767005222CD /* ContentView.swift */,
 				8AF5417A2922D769005222CD /* Assets.xcassets */,
+				192E8B9C29872F96008DDE5F /* Info.plist */,
 				8AF5417C2922D769005222CD /* Preview Content */,
 			);
 			path = DemoApp;
@@ -116,9 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				8AF5418B2922D790005222CD /* MixedFwk.h */,
-				8AF541952922D7A6005222CD /* MyObjcClass.h */,
-				8AF541962922D7A6005222CD /* MyObjcClass.m */,
-				8AF541992922D7B2005222CD /* MySwiftClass.swift */,
+				8AF541952922D7A6005222CD /* FwkObjcClass.h */,
+				8AF541962922D7A6005222CD /* FwkObjcClass.m */,
+				8AF541992922D7B2005222CD /* FwkSwiftClass.swift */,
 			);
 			path = MixedFwk;
 			sourceTree = "<group>";
@@ -131,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF5418C2922D790005222CD /* MixedFwk.h in Headers */,
-				8AF541972922D7A6005222CD /* MyObjcClass.h in Headers */,
+				8AF541972922D7A6005222CD /* FwkObjcClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +175,9 @@
 				8AF5418E2922D790005222CD /* PBXTargetDependency */,
 			);
 			name = DemoApp;
+			packageProductDependencies = (
+				192E8BA02987318B008DDE5F /* MixedPackage */,
+			);
 			productName = DemoApp;
 			productReference = 8AF541732922D767005222CD /* DemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -246,8 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AF5419A2922D7B2005222CD /* MySwiftClass.swift in Sources */,
-				8AF541982922D7A6005222CD /* MyObjcClass.m in Sources */,
+				8AF5419A2922D7B2005222CD /* FwkSwiftClass.swift in Sources */,
+				8AF541982922D7A6005222CD /* FwkObjcClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +412,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -416,7 +441,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = DemoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -526,6 +551,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		192E8BA02987318B008DDE5F /* MixedPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MixedPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AF5416B2922D767005222CD /* Project object */;
 }

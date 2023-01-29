@@ -1,23 +1,32 @@
 # objc-load-and-swift-interop-demo
-Demo of using NSObject's class func load() and using a Swift class there (i.e. importing Swift into Objective-C)
+Demo of using NSObject's [+load()](https://developer.apple.com/documentation/objectivec/nsobject/1418815-load) function in a framework to run code automatically when the framework gets loaded. From there using a Swift class (i.e. importing Swift into Objective-C)
 
 ## Details
 
 The DemoApp is implemented with Swift and SwiftUI.
 
-`DemoApp` target embeds `MixedFwk`, a framework that contains Objective-C and Swift files.
+`DemoApp` target embeds
+- `MixedFwk`, a framework that contains Objective-C and Swift files.
+- `MixedPackage`, a package and its library product that contains
+  - `ObjcModule` with Objective-C sources only
+  -  `SwiftModule` with Swift source only
 
-Once the DemoApp gets started you can see that code of `MyObjcClass` in `MixedFwk` is invoked automatically. Here also interoperability between ObjcC and Swift is demonstrated as `MyObjcClass` will init and call a function of `MySwiftClass`.
+Once the DemoApp gets started you can see that code of
+- `FwkObjcClass` in `MixedFwk`
+- `PackageObjcClass` in `MixedPackage`
+is invoked automatically.
+
+Here also interoperability between ObjcC and Swift is demonstrated as a Swift class is initialized and one of its functions gets called.
 
 ```objc
-#import "MyObjcClass.h"
+#import "FwkObjcClass.h"
 #import "MixedFwk/MixedFwk-Swift.h"
 
-@implementation MyObjcClass
+@implementation FwkObjcClass
 +(void)load {
-    NSLog(@"MyObjClass loaded");
-    MySwiftClass *swiftClass = [[MySwiftClass alloc] init];
-    [swiftClass writeLog];
+    NSLog(@"MixedFwk.FwkObjClass loaded");
+    FwkSwiftClass *swiftClass = [[FwkSwiftClass alloc] init];
+    [swiftClass doSomeWork];
 }
 @end
 ```
